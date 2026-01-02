@@ -11,7 +11,7 @@
     background-image: linear-gradient(#149DE4, #62C2CF);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
 
 }
@@ -19,12 +19,11 @@
 .input-box {
     width: 80%;
     height: 30%;
-    ;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25%;
+
 }
 
 .input {
@@ -49,7 +48,7 @@
 
 .heading {
     color: white;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .button:hover {
@@ -73,6 +72,7 @@
     .input {
         width: 50%;
         height: 40px;
+
     }
 
     .button {
@@ -84,4 +84,60 @@
     .input-box {
         margin-bottom: 60px;
     }
+
+    .list {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    li button {
+        width: auto;
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+}
+
+.list {
+    width: 40%;
+    list-style: none;
+    padding: 0;
+    margin-left: 20%;
+
+}
+
+li button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 2%;
+    width: 80px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+li .edit-btn {
+    background-color: green;
+}
+
+.update-btn {
+    background-color: red;
+    border: 1px solid red;
+}
+
+li .btn-group {
+    display: flex;
+    gap: 10px;
 }
