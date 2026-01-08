@@ -114,11 +114,16 @@ function saveTodos() {
 // Load Todos
 function loadTodos() {
   const todos = JSON.parse(localStorage.getItem("todos")) || [];
+
   if (todos.length === 0) {
     emptyText.style.display = "block";
+  } else {
+    emptyText.style.display = "none";
   }
+
   todos.forEach(todo => createTodo(todo.text, todo.completed));
 }
+
 document.addEventListener('keydown', (e) => {
 
   //Keyboard support
